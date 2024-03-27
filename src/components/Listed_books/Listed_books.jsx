@@ -53,15 +53,15 @@ const Listed_books = () => {
       </div>
 
       <div role="tablist" className="tabs tabs-lifted tabs-lg">
-        <a role="tab" className="tab">Read</a>
-        <a role="tab" className="tab tab-active">Wishlist</a>
+        <a role="tab" className={`tab mr-2 bg-blue-500 text-white px-4 py-2 rounded-md ${currentTab === 'read' ? 'bg-blue-700' : ''}`} onClick={() => handleTabChange('read')}>Read</a>
+        <a role="tab" className={`tab bg-blue-500 text-white px-4 py-2 rounded-md ${currentTab === 'wishlist' ? 'bg-blue-700' : ''}`} onClick={() => handleTabChange('wishlist')}>Wishlist</a>
       </div>
 
-      {/* Tab navigation */}
+      {/* Tab navigation
       <div className="mb-4">
         <button className={`mr-2 bg-blue-500 text-white px-4 py-2 rounded-md ${currentTab === 'read' ? 'bg-blue-700' : ''}`} onClick={() => handleTabChange('read')}>Read</button>
         <button className={`bg-blue-500 text-white px-4 py-2 rounded-md ${currentTab === 'wishlist' ? 'bg-blue-700' : ''}`} onClick={() => handleTabChange('wishlist')}>Wishlist</button>
-      </div>
+      </div> */}
 
       {/* Books list */}
       <div>
