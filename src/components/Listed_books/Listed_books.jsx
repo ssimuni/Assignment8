@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Listed_books = () => {
+const Listed_books = (book) => {
+  const { bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
   const [readBooks, setReadBooks] = useState([]);
   const [wishlistBooks, setWishlistBooks] = useState([]);
   const [sortBy, setSortBy] = useState('rating');
-  const [currentTab, setCurrentTab] = useState('read'); 
+  const [currentTab, setCurrentTab] = useState('read');
 
 
   useEffect(() => {
@@ -15,7 +16,7 @@ const Listed_books = () => {
     setWishlistBooks(savedWishlistBooks);
   }, []);
 
- 
+
   const handleSortByChange = (e) => {
     setSortBy(e.target.value);
   };
@@ -24,15 +25,15 @@ const Listed_books = () => {
     setCurrentTab(tab);
   };
 
- 
+
   const sortBooks = (books) => {
     switch (sortBy) {
       case 'rating':
         return books.slice().sort((a, b) => b.rating - a.rating);
       case 'pages':
-        return books.slice().sort((a, b) => a.totalPages - b.totalPages);
+        return books.slice().sort((a, b) => b.totalPages - a.totalPages);
       case 'year':
-        return books.slice().sort((a, b) => a.yearOfPublishing - b.yearOfPublishing);
+        return books.slice().sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
       default:
         return books;
     }
@@ -61,12 +62,12 @@ const Listed_books = () => {
         {currentTab === 'read' && (
           <div>
             {sortBooks(readBooks).map(book => (
-              <div key={book.bookId} className="mb-4 border mt-5 border-gray-400 rounded-2xl flex">
+              <div key={book.bookId} className="mb-4 border mt-5 border-gray-400 rounded-2xl lg:flex">
                 <div><img src={book.image} className='w-64 h-64 m-5 rounded-2xl' alt="" /></div>
 
-                <div> <h3 className='text-2xl font-bold mt-3'>{book.bookName}</h3>
+                <div className='ml-3 lg:ml-0'> <h3 className='text-2xl font-bold mt-3'>{book.bookName}</h3>
                   <p className='font-semibold mt-3'>By: {book.author}</p>
-                  <div className='flex mt-5'>
+                  <div className='lg:flex mt-5'>
                     <div><h2 className='mt-3 mr-10 font-bold'>Tags: </h2></div>
                     <div>
                       {book.tags.map((tag, index) => (
@@ -79,24 +80,25 @@ const Listed_books = () => {
                     </div>
                   </div>
 
-                  <div className='flex mt-5'>
+                  <div className='lg:flex mt-5'>
                     <div className='flex'>
                       <img src="publisher.png" alt="" className='mr-3' />
                       <p>Publisher: {book.publisher}</p>
                     </div>
 
-                    <div className='flex ml-10'>
+                    <div className='flex lg:ml-10'>
                       <img src="page.png" alt="" className='mr-3' />
                       <p>Page: {book.totalPages}</p>
                     </div>
                   </div>
-                  <hr className='border-slate-400 my-5 w-[800px]' />
+                  <hr className='border-slate-400 my-5 lg:w-[800px]' />
 
                   <a className="btn bg-blue-100 text-blue-400 w-40 rounded-full mr-5">Category: {book.category}</a>
 
                   <a className="btn bg-orange-100 text-orange-400 w-36 rounded-full mr-5">Rating: {book.rating}</a>
 
-                  <Link to="/book/:bookId" className="btn bg-green-500 text-white font-semibold w-32 rounded-full">View Details</Link></div>
+                  <Link to={`/book/${book.bookId}`} className="btn bg-green-500 text-white font-semibold w-32 rounded-full">View Details</Link>
+                </div>
               </div>
 
             ))}
@@ -105,12 +107,12 @@ const Listed_books = () => {
         {currentTab === 'wishlist' && (
           <div>
             {sortBooks(wishlistBooks).map(book => (
-              <div key={book.bookId} className="mb-4 border mt-5 border-gray-400 rounded-2xl flex">
+              <div key={book.bookId} className="mb-4 border mt-5 border-gray-400 rounded-2xl lg:flex">
                 <div><img src={book.image} className='w-64 h-64 m-5 rounded-2xl' alt="" /></div>
 
-                <div> <h3 className='text-2xl font-bold mt-3'>{book.bookName}</h3>
+                <div className='ml-3 lg:ml-0'> <h3 className='text-2xl font-bold mt-3'>{book.bookName}</h3>
                   <p className='font-semibold mt-3'>By: {book.author}</p>
-                  <div className='flex mt-5'>
+                  <div className='lg:flex mt-5'>
                     <div><h2 className='mt-3 mr-10 font-bold'>Tags: </h2></div>
                     <div>
                       {book.tags.map((tag, index) => (
@@ -123,24 +125,25 @@ const Listed_books = () => {
                     </div>
                   </div>
 
-                  <div className='flex mt-5'>
+                  <div className='lg:flex mt-5'>
                     <div className='flex'>
                       <img src="publisher.png" alt="" className='mr-3' />
                       <p>Publisher: {book.publisher}</p>
                     </div>
 
-                    <div className='flex ml-10'>
+                    <div className='flex lg:ml-10'>
                       <img src="page.png" alt="" className='mr-3' />
                       <p>Page: {book.totalPages}</p>
                     </div>
                   </div>
-                  <hr className='border-slate-400 my-5 w-[800px]' />
+                  <hr className='border-slate-400 my-5 lg:w-[800px]' />
 
-                  <a className="btn bg-blue-100 text-blue-400 w-36 rounded-full mr-5">Category: {book.category}</a>
+                  <a className="btn bg-blue-100 text-blue-400 w-40 rounded-full mr-5">Category: {book.category}</a>
 
                   <a className="btn bg-orange-100 text-orange-400 w-36 rounded-full mr-5">Rating: {book.rating}</a>
 
-                  <a className="btn bg-green-500 text-white font-semibold w-32 rounded-full">View Details</a></div>
+                  <Link to={`/book/${book.bookId}`} className="btn bg-green-500 text-white font-semibold w-32 rounded-full">View Details</Link>
+                </div>
               </div>
 
             ))}

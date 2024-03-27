@@ -11,7 +11,7 @@ const Books = () => {
     }, [])
 
     return (
-        <div className='mb-10 ml-20'>
+        <div className='mb-10 lg:ml-20 ml-5'>
             <div className='lg:grid lg:grid-cols-3'>
                 {
                     books.map(book => <Book

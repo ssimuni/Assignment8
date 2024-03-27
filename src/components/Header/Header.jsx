@@ -47,7 +47,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn mr-5 bg-green-500 text-white font-semibold">Sign In</a>
+                <a className="btn mr-5 bg-green-500 text-white font-semibold hidden lg:flex">Sign In</a>
                 <a className="btn bg-blue-400 text-white font-semibold">Sign Up</a>
             </div>
         </div>

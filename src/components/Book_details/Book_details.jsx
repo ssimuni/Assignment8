@@ -74,9 +74,9 @@ const Book_details = () => {
         <div>
             <div className="card card-compact bg-base-100 lg:mx-0 mt-5 lg:mt-0 mb-5">
 
-                <div className='flex'>
+                <div className='lg:flex'>
                     <div className='m-5'>
-                        <img src={book.image} alt="Shoes" className='rounded-2xl w-full h-full' />
+                        <img src={book.image} alt="Shoes" className='rounded-2xl lg:w-full lg:h-full' />
                     </div>
 
                     <div className="card-body">
