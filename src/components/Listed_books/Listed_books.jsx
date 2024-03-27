@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Listed_books = () => {
   const [readBooks, setReadBooks] = useState([]);
   const [wishlistBooks, setWishlistBooks] = useState([]);
-  const [sortBy, setSortBy] = useState('rating'); // Default sort by rating
-  const [currentTab, setCurrentTab] = useState('read'); // Default tab is 'read'
+  const [sortBy, setSortBy] = useState('rating');
+  const [currentTab, setCurrentTab] = useState('read'); 
 
-  // Load added books from local storage on component mount
+
   useEffect(() => {
     const savedReadBooks = JSON.parse(localStorage.getItem('readBooks')) || [];
     const savedWishlistBooks = JSON.parse(localStorage.getItem('wishlistBooks')) || [];
@@ -14,17 +15,16 @@ const Listed_books = () => {
     setWishlistBooks(savedWishlistBooks);
   }, []);
 
-  // Function to handle sorting
+ 
   const handleSortByChange = (e) => {
     setSortBy(e.target.value);
   };
 
-  // Function to handle tab change
   const handleTabChange = (tab) => {
     setCurrentTab(tab);
   };
 
-  // Function to sort books based on selected sorting criteria
+ 
   const sortBooks = (books) => {
     switch (sortBy) {
       case 'rating':
@@ -92,11 +92,11 @@ const Listed_books = () => {
                   </div>
                   <hr className='border-slate-400 my-5 w-[800px]' />
 
-                  <a className="btn bg-blue-100 text-blue-400 w-36 rounded-full mr-5">Category: {book.category}</a>
+                  <a className="btn bg-blue-100 text-blue-400 w-40 rounded-full mr-5">Category: {book.category}</a>
 
                   <a className="btn bg-orange-100 text-orange-400 w-36 rounded-full mr-5">Rating: {book.rating}</a>
 
-                  <a className="btn bg-green-500 text-white font-semibold w-32 rounded-full">View Details</a></div>
+                  <Link to="/book/:bookId" className="btn bg-green-500 text-white font-semibold w-32 rounded-full">View Details</Link></div>
               </div>
 
             ))}

@@ -6,6 +6,8 @@ const Header = () => {
         { path: '/', label: 'Home' },
         { path: '/listed', label: 'Listed Books' },
         { path: '/pages', label: 'Pages to Read' },
+        { path: '/about', label: 'About Us' },
+        { path: '/contact', label: 'Contact Us' },
     ];
 
     return (

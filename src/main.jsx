@@ -11,6 +11,8 @@ import Listed_books from './components/Listed_books/Listed_books';
 import Pages_to_read from './components/Pages_to_read/Pages_to_read';
 import Book_details from './components/Book_details/Book_details';
 import Error from './components/Error/Error.jsx'
+import AboutUs from './components/AboutUs/AboutUs';
+import ContactUs from './components/ContactUs/ContactUs.jsx';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
       {
         path: '/pages',
         element: <Pages_to_read></Pages_to_read>
+      },
+      {
+        path: '/about',
+        element: <AboutUs></AboutUs>
+      },
+      {
+        path: '/contact',
+        element: <ContactUs></ContactUs>
       },
       {
         path: '/book/:id',
