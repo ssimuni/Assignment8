@@ -4,7 +4,7 @@ Welcome to Book Vibe, a platform for book enthusiasts to explore, discover, and 
 
 ## Live Site
 
-Visit the live site [here](https://thunderous-bunny-1fa3aa.netlify.app/).
+Visit the live site [here](https://monumental-chaja-39bc6f.netlify.app/).
 
 ## Features
 
