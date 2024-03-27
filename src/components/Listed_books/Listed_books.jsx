@@ -97,7 +97,6 @@ const Listed_books = () => {
                   <a className="btn bg-orange-100 text-orange-400 w-36 rounded-full mr-5">Rating: {book.rating}</a>
 
                   <a className="btn bg-green-500 text-white font-semibold w-32 rounded-full">View Details</a></div>
-
               </div>
 
             ))}
@@ -105,11 +104,45 @@ const Listed_books = () => {
         )}
         {currentTab === 'wishlist' && (
           <div>
-            <h2 className="text-xl font-bold mb-2">Wishlist Books</h2>
             {sortBooks(wishlistBooks).map(book => (
-              <div key={book.bookId} className="mb-4">
-                {/* Display book details */}
+              <div key={book.bookId} className="mb-4 border mt-5 border-gray-400 rounded-2xl flex">
+                <div><img src={book.image} className='w-64 h-64 m-5 rounded-2xl' alt="" /></div>
+
+                <div> <h3 className='text-2xl font-bold mt-3'>{book.bookName}</h3>
+                  <p className='font-semibold mt-3'>By: {book.author}</p>
+                  <div className='flex mt-5'>
+                    <div><h2 className='mt-3 mr-10 font-bold'>Tags: </h2></div>
+                    <div>
+                      {book.tags.map((tag, index) => (
+                        <button key={index} className="btn bg-base-200 text-green-500 rounded-full font-bold text-[15px] mr-10">{tag}</button>
+                      ))}
+                    </div>
+                    <div className='flex mt-3'>
+                      <img src="yearofpublishing.png" alt="" className='w-5 h-6 mr-2' />
+                      <p>Year of publishing: {book.yearOfPublishing}</p>
+                    </div>
+                  </div>
+
+                  <div className='flex mt-5'>
+                    <div className='flex'>
+                      <img src="publisher.png" alt="" className='mr-3' />
+                      <p>Publisher: {book.publisher}</p>
+                    </div>
+
+                    <div className='flex ml-10'>
+                      <img src="page.png" alt="" className='mr-3' />
+                      <p>Page: {book.totalPages}</p>
+                    </div>
+                  </div>
+                  <hr className='border-slate-400 my-5 w-[800px]' />
+
+                  <a className="btn bg-blue-100 text-blue-400 w-36 rounded-full mr-5">Category: {book.category}</a>
+
+                  <a className="btn bg-orange-100 text-orange-400 w-36 rounded-full mr-5">Rating: {book.rating}</a>
+
+                  <a className="btn bg-green-500 text-white font-semibold w-32 rounded-full">View Details</a></div>
               </div>
+
             ))}
           </div>
         )}
