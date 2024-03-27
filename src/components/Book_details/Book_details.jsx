@@ -25,7 +25,7 @@ const Book_details = () => {
     }, []);
 
     const addToRead = () => {
-        if (!readBooks.includes(book)) {
+        if (!readBooks.some(existingBook => existingBook.bookId === book.bookId)) {
             const updatedReadBooks = [...readBooks, book];
             setReadBooks(updatedReadBooks);
             localStorage.setItem('readBooks', JSON.stringify(updatedReadBooks));
@@ -42,9 +42,9 @@ const Book_details = () => {
             });
         }
     };
-
+    
     const addToWishlist = () => {
-        if (!readBooks.includes(book) && !wishlistBooks.includes(book)) {
+        if (!readBooks.some(existingBook => existingBook.bookId === book.bookId) && !wishlistBooks.some(existingBook => existingBook.bookId === book.bookId)) {
             const updatedWishlistBooks = [...wishlistBooks, book];
             setWishlistBooks(updatedWishlistBooks);
             localStorage.setItem('wishlistBooks', JSON.stringify(updatedWishlistBooks));
@@ -53,7 +53,7 @@ const Book_details = () => {
                 title: 'Added to Wishlist!',
                 text: `You have added "${book.bookName}" to your Wishlist.`,
             });
-        } else if (readBooks.includes(book)) {
+        } else if (readBooks.some(existingBook => existingBook.bookId === book.bookId)) {
             Swal.fire({
                 icon: 'warning',
                 title: 'Already Added!',
@@ -67,6 +67,7 @@ const Book_details = () => {
             });
         }
     };
+    
 
     console.log(book);
     return (
