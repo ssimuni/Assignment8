@@ -53,9 +53,8 @@ const Listed_books = () => {
       </div>
 
       <div role="tablist" className="tabs tabs-lifted tabs-lg">
-        <a role="tab" className="tab">Large</a>
-        <a role="tab" className="tab tab-active">Large</a>
-        <a role="tab" className="tab">Large</a>
+        <a role="tab" className="tab">Read</a>
+        <a role="tab" className="tab tab-active">Wishlist</a>
       </div>
 
       {/* Tab navigation */}
