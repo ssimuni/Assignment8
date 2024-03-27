@@ -4,13 +4,13 @@
         "bookName": "The Catcher in the Rye",
         "author": "J.D. Salinger",
         "image": "https://i.ibb.co/jRBhfcL/clay-banks-w-q-Tfi-Pbjbg-unsplash.jpg",
-        "review": "A poignant exploration of adolescence and societal disillusionment.",
+        "review": "The Great Gatsby, penned by F. Scott Fitzgerald, is a literary masterpiece that delves into the complexities of the American Dream against the backdrop of the Roaring Twenties. Set in the fictional town of West Egg on Long Island, the novel follows the enigmatic Jay Gatsby and his relentless pursuit of wealth and love. Fitzgerald's prose weaves a mesmerizing tale of love, greed, and societal decadence, capturing the essence of an era marked by excess and disillusionment. Through vivid imagery and rich symbolism, the novel explores themes of social class, identity, and the fragility of dreams. ",
         "totalPages": 277,
         "rating": 4.2,
         "category": "Fiction",
         "tags": [
-            "Coming-of-age",
-            "Literary"
+            "#Coming-of-age",
+            "#Literary"
         ],
         "publisher": "Little, Brown and Company",
         "yearOfPublishing": 1951
@@ -20,13 +20,13 @@
         "bookName": "To Kill a Mockingbird",
         "author": "Harper Lee",
         "image": "https://i.ibb.co/888Cq1x/thought-catalog-o0-Qqw21-0-NI-unsplash.jpg",
-        "review": "A timeless classic that tackles themes of racial injustice with grace and wisdom.",
+        "review": "The Night Circus by Erin Morgenstern is a mesmerizing tale of magic, love, and destiny that transports readers to a world unlike any other. Set in the late 19th century, the story revolves around a mysterious circus that arrives without warning and is only open at night. Within its black and white striped tents, visitors encounter wonders beyond imagination, from illusionists and contortionists to magical beasts and enchanting performances. But behind the scenes, a fierce competition is underway between two young magicians, Celia and Marco, who have been bound to each other since childhood by their mentors.",
         "totalPages": 324,
         "rating": 4.5,
         "category": "Fiction",
         "tags": [
-            "Legal drama",
-            "Social issues"
+            "#Legal drama",
+            "#Social issues"
         ],
         "publisher": "J. B. Lippincott & Co.",
         "yearOfPublishing": 1960
@@ -36,13 +36,13 @@
         "bookName": "1984",
         "author": "George Orwell",
         "image": "https://i.ibb.co/tqXpqbK/rey-seven-nm-m-Z4-Cs2-I-unsplash.jpg",
-        "review": "A chilling dystopian masterpiece that remains eerily relevant today.",
+        "review": "George Orwell's 1984 is a chilling dystopian novel that remains eerily relevant in today's society. Set in a totalitarian regime where individuality is suppressed, the story follows Winston Smith as he rebels against the oppressive Party and its leader, Big Brother. Through its depiction of surveillance, propaganda, and thought control, 1984 serves as a stark warning about the dangers of authoritarianism and the erosion of freedom. Orwell's masterful prose and thought-provoking narrative force readers to confront uncomfortable truths about power, truth, and the fragility of democracy. A haunting and unforgettable read that leaves a lasting impression.",
         "totalPages": 328,
         "rating": 4.6,
         "category": "Fiction",
         "tags": [
-            "Dystopian",
-            "Political"
+            "#Dystopian",
+            "#Political"
         ],
         "publisher": "Secker & Warburg",
         "yearOfPublishing": 1949
@@ -52,13 +52,13 @@
         "bookName": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "image": "https://i.ibb.co/rpd9msZ/elisa-calvet-b-S3n-UOq-Dm-Uvc-unsplash.jpg",
-        "review": "A dazzling portrayal of the American Dream and its demise, set in the decadent Jazz Age.",
+        "review": "Harper Lee's To Kill a Mockingbird is a poignant and powerful exploration of justice, racism, and morality in the American South. Through the eyes of young Scout Finch, the novel confronts the deep-seated prejudices and injustices that permeate society, particularly in the case of Tom Robinson, a black man falsely accused of raping a white woman. As Scout navigates the complexities of race and class, she learns valuable lessons about empathy, compassion, and standing up for what is right. With its timeless themes and unforgettable characters, To Kill a Mockingbird continues to resonate with readers of all ages, challenging them to confront injustice and strive for a more just and equitable world.",
         "totalPages": 180,
         "rating": 4.3,
         "category": "Fiction",
         "tags": [
-            "Romance",
-            "Tragedy"
+            "#Romance",
+            "#Tragedy"
         ],
         "publisher": "Charles Scribner's Sons",
         "yearOfPublishing": 1925
@@ -68,13 +68,13 @@
         "bookName": "Pride and Prejudice",
         "author": "Jane Austen",
         "image": "https://i.ibb.co/NWP095f/aaron-burden-9zs-HNt5-Opq-E-unsplash.jpg",
-        "review": "A witty and charming novel that explores love, marriage, and social class in Regency England.",
+        "review": "J.D. Salinger's The Catcher in the Rye is a seminal work of American literature that captures the angst and alienation of adolescence with unparalleled authenticity. Narrated by the irreverent and disenchanted Holden Caulfield, the novel follows his journey through New York City as he grapples with the hypocrisy and phoniness of the adult world. Through Holden's cynical yet vulnerable voice, Salinger explores themes of identity, authenticity, and the search for meaning in a conformist society. The Catcher in the Rye remains as relevant today as it was upon its publication, offering readers a poignant and timeless portrayal of the human condition.",
         "totalPages": 279,
         "rating": 4.4,
         "category": "Fiction",
         "tags": [
-            "Romance",
-            "Satire"
+            "#Romance",
+            "#Satire"
         ],
         "publisher": "T. Egerton, Whitehall",
         "yearOfPublishing": 1813
@@ -84,13 +84,13 @@
         "bookName": "The Hobbit",
         "author": "J.R.R. Tolkien",
         "image": "https://i.ibb.co/8zg0sKd/annelies-geneyn-bh-BONc07-Ws-I-unsplash.jpg",
-        "review": "An enchanting adventure filled with memorable characters and epic quests.",
+        "review": "Jane Austen's Pride and Prejudice is a timeless romantic classic that continues to enchant readers with its wit, charm, and unforgettable characters. Set in early 19th-century England, the novel follows the spirited Elizabeth Bennet as she navigates the complexities of love, marriage, and social class. Through Austen's keen observations and sharp social commentary, Pride and Prejudice offers a richly textured portrait of Regency society, highlighting the absurdities and hypocrisies of the era. With its sparkling dialogue and timeless themes of love and redemption, Pride and Prejudice remains a beloved masterpiece of English literature, captivating readers for generations.",
         "totalPages": 310,
         "rating": 4.7,
         "category": "Fantasy",
         "tags": [
-            "Adventure",
-            "Middle-earth"
+            "#Adventure",
+            "#Middle-earth"
         ],
         "publisher": "Allen & Unwin",
         "yearOfPublishing": 1937
@@ -100,13 +100,13 @@
         "bookName": "Harry Potter and the Philosopher's Stone",
         "author": "J.K. Rowling",
         "image": "https://i.ibb.co/7WZF3Hx/daria-nepriakhina-x-Y55b-L5m-ZAM-unsplash.jpg",
-        "review": "A magical journey into a world of wizardry and friendship, perfect for readers of all ages.",
+        "review": "Harper Lee's To Kill a Mockingbird is a poignant and powerful exploration of justice, racism, and morality in the American South. Through the eyes of young Scout Finch, the novel confronts the deep-seated prejudices and injustices that permeate society, particularly in the case of Tom Robinson, a black man falsely accused of raping a white woman. As Scout navigates the complexities of race and class, she learns valuable lessons about empathy, compassion, and standing up for what is right. With its timeless themes and unforgettable characters, To Kill a Mockingbird continues to resonate with readers of all ages, challenging them to confront injustice and strive for a more just and equitable world.",
         "totalPages": 332,
         "rating": 4.8,
         "category": "Fantasy",
         "tags": [
-            "Magic",
-            "Friendship"
+            "#Magic",
+            "#Friendship"
         ],
         "publisher": "Bloomsbury Publishing",
         "yearOfPublishing": 1997
@@ -116,13 +116,13 @@
         "bookName": "The Da Vinci Code",
         "author": "Dan Brown",
         "image": "https://i.ibb.co/9VhrY7C/mikolaj-DCzpr09c-TXY-unsplash.jpg",
-        "review": "A gripping thriller that combines art, history, and mystery in a riveting narrative.",
+        "review": "J.D. Salinger's The Catcher in the Rye is a seminal work of American literature that captures the angst and alienation of adolescence with unparalleled authenticity. Narrated by the irreverent and disenchanted Holden Caulfield, the novel follows his journey through New York City as he grapples with the hypocrisy and phoniness of the adult world. Through Holden's cynical yet vulnerable voice, Salinger explores themes of identity, authenticity, and the search for meaning in a conformist society. The Catcher in the Rye remains as relevant today as it was upon its publication, offering readers a poignant and timeless portrayal of the human condition.",
         "totalPages": 454,
         "rating": 4.1,
         "category": "Thriller",
         "tags": [
-            "Conspiracy",
-            "Symbolism"
+            "#Conspiracy",
+            "#Symbolism"
         ],
         "publisher": "Doubleday",
         "yearOfPublishing": 2003
@@ -132,13 +132,13 @@
         "bookName": "Gone Girl",
         "author": "Gillian Flynn",
         "image": "https://i.ibb.co/P5VCTwk/sincerely-media-n-Grf-Kmtwv24-unsplash.jpg",
-        "review": "A twisted and suspenseful tale of marriage and deception that keeps readers guessing until the very end.",
+        "review": "Herman Melville's Moby-Dick stands as one of the greatest achievements in American literature, a sweeping epic that explores the timeless themes of obsession, fate, and the inscrutable mysteries of the natural world. Set against the backdrop of the whaling industry, the novel follows the monomaniacal Captain Ahab as he leads his crew on a perilous voyage in pursuit of the elusive white whale, Moby Dick. Through its rich symbolism and philosophical depth, Melville's magnum opus transcends its maritime setting to grapple with profound existential questions, inviting readers to ponder the nature of obsession and the limits of human ambition. Moby-Dick remains a towering work of literature, reminding us of the enduring power of the human spirit in the face of adversity.",
         "totalPages": 432,
         "rating": 4.4,
         "category": "Thriller",
         "tags": [
-            "Mystery",
-            "Psychological"
+            "#Mystery",
+            "#Psychological"
         ],
         "publisher": "Crown Publishing Group",
         "yearOfPublishing": 2012
