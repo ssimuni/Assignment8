@@ -31,7 +31,7 @@ const Book_details = () => {
             localStorage.setItem('readBooks', JSON.stringify(updatedReadBooks));
             Swal.fire({
                 icon: 'success',
-                title: 'Added to Read!',
+                title: 'Added to Readlist!',
                 text: `You have added "${book.bookName}" to your Read list.`,
             });
         } else {
